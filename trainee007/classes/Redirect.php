@@ -1,0 +1,30 @@
+<?php
+/**
+ * @category Redirect
+ */
+	class Redirect {
+    /**
+     * Redirect user if not found path.
+     * 
+     ** Include file 404.php to notice user if the path not exist
+     ** Stop to excute code after.
+     * 
+     * @param int|null $location 
+     */
+		public static function to($location = null) {
+			if ($location) {
+				if (is_numeric($location)) {
+					switch ($location) {
+						case '404':
+							header('HTTP/1.0 404 Not Found');
+							include 'includes/errors/404.php';
+							exit();
+						break;
+					}
+				}
+				header('Location: '.$location);
+				exit();
+			}
+		}
+	}
+?>
