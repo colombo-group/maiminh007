@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class User</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Config.html">Config</a></li>
+				<li><a href="class-Cookie.html">Cookie</a></li>
+				<li><a href="class-Database.html">Database</a></li>
+				<li><a href="class-Hash.html">Hash</a></li>
+				<li><a href="class-Input.html">Input</a></li>
+				<li><a href="class-Redirect.html">Redirect</a></li>
+				<li><a href="class-Session.html">Session</a></li>
+				<li><a href="class-Token.html">Token</a></li>
+				<li class="active"><a href="class-User.html">User</a></li>
+				<li><a href="class-Validate.html">Validate</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class User</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Category:</b>
+				User<br>
+			<b>Located at</b> <a href="source-class-User.html#2-174" title="Go to source code">User.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-User.html#18-43" title="Go to source code">__construct</a>( <span>string|null <var>$user</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Initializing method with connect to database,get session,cookie</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initializing method with connect to database,get session,cookie</p>
+
+<p>*First, check session user and get session if available
+*Then check user is logged in or not.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$user</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-User.html#44-60" title="Go to source code">update</a>( <span>array <var>$fields</var> = <span class="php-keyword1">array</span>()</span>, <span>integer|null <var>$id</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Update information with the same id.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Update information with the same id.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd>fields need to be updated</dd>
+					<dt><var>$id</var></dt>
+					<dd>Id user</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code><a href="source-class-User.html#61-71" title="Go to source code">create</a>( <span>array <var>$fields</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Create user when they registry successfully.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create user when they registry successfully.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="find" id="_find">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_find">#</a>
+		<code><a href="source-class-User.html#72-89" title="Go to source code">find</a>( <span>string|integer <var>$user</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>check user existed in database or not.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>check user existed in database or not.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$user</var></dt>
+					<dd>can be id or username</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="login" id="_login">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_login">#</a>
+		<code><a href="source-class-User.html#90-126" title="Go to source code">login</a>( <span>string|null <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$password</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$remember</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$username</var></dt>
+					<dd></dd>
+					<dt><var>$password</var></dt>
+					<dd></dd>
+					<dt><var>$remember</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasPermission" id="_hasPermission">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasPermission">#</a>
+		<code><a href="source-class-User.html#127-142" title="Go to source code">hasPermission</a>( <span>integer <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exists" id="_exists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exists">#</a>
+		<code><a href="source-class-User.html#143-149" title="Go to source code">exists</a>( )</code>
+
+		<div class="description short">
+			<p>check user existed or not</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>check user existed or not</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="logout" id="_logout">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_logout">#</a>
+		<code><a href="source-class-User.html#150-157" title="Go to source code">logout</a>( )</code>
+
+		<div class="description short">
+			<p>Logout user</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Logout user</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="data" id="_data">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_data">#</a>
+		<code><a href="source-class-User.html#158-165" title="Go to source code">data</a>( )</code>
+
+		<div class="description short">
+			<p>the first query is returned.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>the first query is returned.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isLoggedIn" id="_isLoggedIn">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isLoggedIn">#</a>
+		<code><a href="source-class-User.html#166-173" title="Go to source code">isLoggedIn</a>( )</code>
+
+		<div class="description short">
+			<p>Check user is logged in or not.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check user is logged in or not.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
